@@ -11,25 +11,29 @@ Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un arra
 
 */
 
-//Generare un numero random da 1 a 6 user play
-const userPlay = Math.floor((Math.random() * 6) + 1);
-console.log(userPlay);
-
-//Generare un numero random da 1 a 6 computer play
-const computerPlay = Math.floor((Math.random() * 6) + 1);
-console.log(computerPlay);
-
-//Stabilire il vincitore in base al punteggio più alto
-if (userPlay === computerPlay) {
-    console.log('you tied');
-}
-else if (userPlay > computerPlay) {
-    console.log('you win');
+document.getElementById('spear').addEventListener('click', function () {
     
-} else if (userPlay < computerPlay) {
-    console.log('you lost');
+    //Generare un numero random da 1 a 6 user play
+    const userPlay = Math.floor((Math.random() * 6) + 1);
+    console.log(userPlay);
     
-} 
+    //Generare un numero random da 1 a 6 computer play
+    const computerPlay = Math.floor((Math.random() * 6) + 1);
+    console.log(computerPlay);
+    
+    //Stabilire il vincitore in base al punteggio più alto
+    if (userPlay === computerPlay) {
+        console.log('you tied');
+    }
+    else if (userPlay > computerPlay) {
+        console.log('you win');
+        
+    } else if (userPlay < computerPlay) {
+        console.log('you lost');
+        
+    } 
+})
+
 
 /* 
 Mail
@@ -47,22 +51,32 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 */
 
-//Chiedere userMail
-const userMail = prompt('enter your invitation email');
-console.log(userMail);
-
-//Creare listMail partecipanti
-const guestList = ['fabio84@gmail.com', 'licia98@gmail.com', 'maria81@gmail.com', 'danilo99@gmail.com'];
-console.log(guestList);
-
-//Verificare se userMail è presente nella listMail
-
-for (let i = 0; i <= guestList.length; i++) {
-    if (condition) {
-        
+document.getElementById ('check').addEventListener('click', function () {
+    
+    //Chiedere userMail
+    const userMail = prompt('enter your invitation email');
+    console.log(userMail);
+    
+    //Creare listMail partecipanti
+    const guestList = ['fabio84@gmail.com', 'licia98@gmail.com', 'maria81@gmail.com', 'danilo99@gmail.com'];
+    console.log(guestList); 
+    
+    //Verificare se userMail è presente nella listMail
+    let invited = false;
+    
+    for (let i = 0; i <= guestList.length; i++) {
+        if (userMail == guestList[i]) {
+            console.log('sei invitato');
+            invited = true;
+        }    
     }
     
-}
+    if (invited == false) {
+        console.log('non sei invitato');
+    }
+})
+
+
 //Stampa esito verifica
 
 /* 
