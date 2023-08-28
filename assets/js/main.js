@@ -5,7 +5,7 @@ Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un arra
 
 ## tool:
 - let/const
-- math random
+- math.floor
 - if/else
 
 */
@@ -19,3 +19,13 @@ const computerPlay = Math.floor((Math.random() * 6) + 1);
 console.log(computerPlay);
 
 //Stabilire il vincitore in base al punteggio più alto
+if (userPlay === computerPlay) {
+    console.log('you tied');
+}
+else if (userPlay > computerPlay) {
+    console.log('you win');
+    
+} else if (userPlay < computerPlay) {
+    console.log('you lost');
+    
+} 
