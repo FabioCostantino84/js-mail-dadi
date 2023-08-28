@@ -77,6 +77,7 @@ document.getElementById ('check').addEventListener('click', function () {
 })
 
 
+
 //Stampa esito verifica
 
 /* 
