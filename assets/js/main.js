@@ -45,6 +45,18 @@ stampa un messaggio appropriato sull’esito del controllo.
 - if/else
 - inner html
 
+*/
+
+//Chiedere userMail
+const userMail = prompt('enter your invitation email');
+
+//Creare listMail partecipanti
+
+
+//Verificare se userMail è presente nella listMail
+//Stampa esito verifica
+
+/* 
 Bonus
 
 Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
@@ -53,5 +65,5 @@ Consigli del giorno:
 2 javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
 3 si ma noi cosa vogliamo fare?
 4 torniamo a scrivere in italiano
-5 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+5 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" 
 */
