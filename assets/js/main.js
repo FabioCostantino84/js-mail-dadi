@@ -49,11 +49,20 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 //Chiedere userMail
 const userMail = prompt('enter your invitation email');
+console.log(userMail);
 
 //Creare listMail partecipanti
-
+const guestList = ['fabio84@gmail.com', 'licia98@gmail.com', 'maria81@gmail.com', 'danilo99@gmail.com'];
+console.log(guestList);
 
 //Verificare se userMail è presente nella listMail
+
+for (let i = 0; i <= guestList.length; i++) {
+    if (condition) {
+        
+    }
+    
+}
 //Stampa esito verifica
 
 /* 
